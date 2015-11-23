@@ -12,9 +12,9 @@ Dates_Dictionary = {}	#contains all date instances created by Terry and Jacob
 
 class Dates: #creates a date instance with attributes such as budget, location, and type  
     
-    def __init__(self, name, type, cost, location, description):
+    def __init__(self, name, type_date, cost, location, description):
         self.name = name
-		self.type = type #food, movie, date, or travel
+		self.type_date = type_date #food, movie, date, or travel
 		self.cost = cost #max amount of money date will cost
 		self.location = location #at home or somewhere else
 		self.description = description # short description for more details
@@ -35,7 +35,7 @@ class Dates: #creates a date instance with attributes such as budget, location, 
 
 
 Wes_Anderson = Dates('date', 20, home, str(Watch all Wes Anderson films: http://www.imdb.com/name/nm0027572/ (imdb discography). We would need popcorn and snacks as well...))
-
+San_Diego = Dates('date', 50, travel, str(Take AmTrak's Pacific Surfliner, OC via SD, for scenic route...Watch sunrise or sunset on train...Enjoy day in San Diego)
 
 def Date_Conversation(): #determines which date to go on  
 	date_type = raw_input('What do you want to do? Eat or watch a movie or go on a date or travel. (Enter eat,movie,date,or travel or any if you cannot decide): '))
